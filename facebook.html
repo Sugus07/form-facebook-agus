@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'fb': '#3b5998'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container my-5">
+        <section>
+            <div class="fb max-w-lg mx-auto p-5 bg-fb rounded-md">
+                    <form action="">
+                        <section class="bg-slate-200 p-5 rounded-sm">
+                            <h1 class="font-bold text-4xl text-center my-5">Facebook</h1>
+                            <label for="email">
+                                <span class="font-semibold after:content-['*'] after:ml-0.5 after:text-red-600">Email</span>
+                                <input type="email" id="email" placeholder="Masukan Email Anda" class="block py-2 px-3 w-full bg-slate-100 rounded-lg focus:outline-none focus:ring-1 focus:ring-sky-600 peer invalid:text-red-600 invalid:focus:ring-red-600 shadow-xl">
+                                <p class="invisible peer-invalid:visible peer-invalid:text-red-600">Email yang anda masukan salah!</p>
+                            </label>
+                            <label for="password">
+                                <span class="font-semibold after:content-['*'] after:text-red-600 after:ml-0.5 ">Password</span>
+                                <input type="password" id="password" placeholder="Masukan Password Anda" class="block py-2 px-3 w-full bg-slate-100 rounded-lg focus:outline-none focus:ring-1 focus:ring-sky-600 shadow-xl">
+                            </label>
+                            <button class="w-full my-5 py-2 px-3 bg-slate-100 rounded-md shadow-xl">Login</button>
+                            <a href="#" class="hover:underline block">Lupa kata sandi anda ?</a>
+                        </section>
+                        <p class="text-center text-slate-100 mt-2">Atau</p>
+                        <button class="block mx-auto my-2 py-2 px-3 bg-green-500 text-slate-100 rounded-md hover:bg-green-600 active:bg-green-700">Create New Account</button>
+                    </form>
+                    <section class="language my-5">
+                        <ul class="text-slate-100">
+                            <li><a href="#" class="hover:underline">Bahasa Indonesia</a></li>
+                            <li><a href="#" class="hover:underline">Bahasa Jawa</a></li>
+                            <li><a href="#" class="hover:underline">English</a></li>
+                            <li><a href="#" class="hover:underline">Bahasa Lainnya</a></li>
+                        </ul>
+                    </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
